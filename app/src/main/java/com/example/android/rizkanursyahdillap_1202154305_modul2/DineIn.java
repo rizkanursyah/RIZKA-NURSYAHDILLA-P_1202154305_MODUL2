@@ -39,7 +39,7 @@ public class DineIn extends AppCompatActivity implements
 
     }
 
-    public void onClickOrder(View view) {
+    public void onClickOrder(View view) {//intent
         Intent intent = new Intent(this,Menu.class);
         startActivity(intent);
     }

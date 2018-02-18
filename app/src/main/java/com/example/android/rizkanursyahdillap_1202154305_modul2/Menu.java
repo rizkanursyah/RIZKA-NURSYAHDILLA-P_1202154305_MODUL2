@@ -21,13 +21,13 @@ public class Menu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
         dummiesData();
-        // Get a handle to the RecyclerView.
+        //mendapatkan penanganan untuk recyclerview
         mRecyclerView = (RecyclerView) findViewById(R.id.recyclerview);
-        // Create an adapter and supply the data to be displayed.
+        //membuat adapter dan memberikan data untuk ditampilkan
         mAdapter = new MenuAdapter(this, foods, priceses, photos);
-        // Connect the adapter with the RecyclerView.
+        //hubungkan adapter dengan recyclerview
         mRecyclerView.setAdapter(mAdapter);
-        // Give the RecyclerView a default layout manager.
+        //buat recyclerview dengan pengelola layout default
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
     //membuat data recycler

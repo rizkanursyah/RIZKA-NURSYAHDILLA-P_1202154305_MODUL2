@@ -14,6 +14,7 @@ import java.util.LinkedList;
  * Created by asus on 2/17/2018.
  */
 
+//membuat class menuadapter
 public class MenuAdapter extends
         RecyclerView.Adapter<MenuAdapter.MenuViewHolder>{
 
@@ -67,9 +68,9 @@ public class MenuAdapter extends
             photoItemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    // Get the position of the item that was clicked.
+                    // mendapatkan posisi item dari tampilanPosition
                     int mPosition = getLayoutPosition();
-                    // Use that to access the affected item in mWordList.
+                    // guanakan item untuk list yang diinginkan
                     String food = mFoodList.get(mPosition);
                     Integer price = mPriceList.get(mPosition);
                     Integer photo = mPhotoList.get(mPosition);

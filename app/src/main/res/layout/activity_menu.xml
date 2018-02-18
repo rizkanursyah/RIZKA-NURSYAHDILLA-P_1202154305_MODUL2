@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+    <!--<menambahkan recycler view dalam layout-->
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
@@ -12,3 +13,4 @@
 
     </android.support.v7.widget.RecyclerView>
 </android.support.design.widget.CoordinatorLayout>
+
